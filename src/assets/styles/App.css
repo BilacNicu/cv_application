@@ -1,0 +1,576 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.CVAppDiv{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(244, 244, 244);
+}
+.CVAppDiv.expandedExp{
+  height: 135vh;
+}
+.CVAppDiv.expandedEdc{
+  height: 128vh;
+}
+.CVAppDiv.expandedEdcAndExp{
+  height: 186vh;
+}
+
+
+
+.leftSide{
+  height: 100vh;
+  width: 10vw;
+  background-color: rgb(244, 244, 244);
+}
+.content{
+  height: 100%;
+  width: 80vw;
+  background-color: rgb(244, 244, 244);
+  display: flex;
+  flex-direction: row;
+}
+.rightSide{
+  height: 100vh;
+  width: 9vw;
+  background-color: rgb(244, 244, 244);
+  margin-left: 1vw;
+}
+.contentLeft{
+  margin-top: 3vh;
+  height: 15vh;
+  width: 7vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.contentBtn, .customizeBtn{
+   background-color: rgb(244, 244, 244);
+   margin: 10px;
+   color: black;
+   height: 100px;
+   width: 110px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+.contentCenter{
+  height: 90%;
+  width: 28vw;
+  background-color: rgb(244, 244, 244);;
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+.contentControls{
+  width: 28vw;
+  height: 6vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.clearBtn{
+  margin-right: 1cqi;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 12vw;
+  background-color: transparent;
+  color: red;
+ 
+}
+.loadExampleBtn{
+  width: 12vw;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: black;
+  background-color: rgb(244, 244, 244);
+}
+
+.fontPickerDiv.visible{
+  background-color: white;
+  height: 17vh;
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.fontPickerDiv.hidden{ 
+  display: none;
+}
+.fonts{
+  display: flex; 
+  flex-direction: row;
+  margin-top: 20px;
+}
+.fontHeader{
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.font1{
+  background-color: rgb(226, 226, 226); 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 6.5vh;
+  width: 7vh;
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid black;
+  cursor: pointer;
+}
+.fontExample{
+  color: black;
+  font-weight: bold;
+  height: 1.5vh;
+  font-size: 1.8rem;
+  margin-top: 5px;
+}
+.fontName{
+  color: black;
+  height: 1.5vh;
+  margin-top: -5px;
+}
+.tnr{
+  font-family: 'Times New Roman', Times, serif;
+}
+.rbt{
+  font-family:'Courier New', Courier, monospace;
+}
+.tnr, .rbt{
+  margin-left: 1vw;
+}
+
+.colorPickerDiv.visible{
+  background-color: white;
+  height: 10vh;
+  margin-top: 2vh;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.colorPickerDiv.hidden{
+  display: none;
+}
+.hexColorPicker{
+  margin-top: 6vh;
+}
+.hexColorPicker.hidden{
+  display: none;
+}
+.color{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.accentAndCircle{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.accentColor{
+  color: black;
+  font-size: 1.3rem;
+  margin-top: 14px;
+  margin-right: 10px;
+}
+.circle{
+  height: 40px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.colorHeader{
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+.personalDetailsDiv{
+  background-color: white;
+  height: 40vh;
+  margin-top: 2vh;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.personalDetailsDiv.visible{
+  display: flex;
+}
+.personalDetailsDiv.hidden{
+  display: none;
+}
+
+.personalDetailsHeader, .educationHeader, .experienceHeader{
+  font-size: 30px;
+  height: 30px;
+  margin-top: 0px;
+  color: black;
+}
+
+.educationHeader, .experienceHeader{
+margin-left: -12px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+.inputGroup{
+  color: black;
+  display: flex;
+  flex-direction: column;
+  height: 9vh;
+  background-color: transparent;
+  width: 100%;
+}
+.fullNameLabel, .emailLabel, .phoneNumberLabel, .adressLabel, .companyNameLabel
+, .positionTitleLabel, .startDateLabel, .endDateLabel, .descriptionLabel, 
+.schoolLabel, .degreeLabel, .jobLocationLabel, .locationEdLabel{
+  align-self: flex-start;
+  font-weight:500;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.fullNameInput, .emailInput, .phoneNumberInput, .adressInput, .companyInput
+, .positionTitleInput, .startDateInput, .endDateInput, .degreeInput, .schoolInput
+, .locationJobInput, .locationEdInput{
+  height: 30px;
+  font-size: 15px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding-left: 10px;
+  transition: all 0.3s ease-in-out;
+  outline: none; 
+  color: black;
+  background-color: rgb(244, 244, 244);
+}
+.descriptionInput{
+  height: 30px;
+  font-size: 15px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding-left: 10px;
+  transition: all 0.3s ease-in-out;
+  outline: none; 
+  color: black;
+  background-color: rgb(244, 244, 244);
+}
+
+.fullNameInput:focus, .fullNameInput:hover,
+.emailInput:focus, .emailInput:hover,
+.phoneNumberInput:focus, .phoneNumberInput:hover,
+.adressInput:focus, .adressInput:hover {
+  border: 2px solid grey;
+}
+
+.experienceDiv, .educationDetailsDiv{
+  background-color: white;
+  display: none;
+  height: 55vh; 
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: -1.3vh;
+}
+.experienceDiv.expanded, .educationDetailsDiv.expanded {
+  display: block;
+}
+
+.educationDiv{
+  background-color: white;
+  display: none;
+  height: 45vh; 
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: -1.3vh;
+}
+.educationDiv.expanded {
+  display: block;
+}
+.experienceDiv.expanded.hidden, .educationDiv.expanded.hidden{
+  display:none;
+}
+.educationDiv.hidden{
+  display:none;
+}
+
+.expandExperienceBtn, .expandEducationBtn{
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 60px;
+  margin-top: 2vh;
+  color:black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.expandExperienceBtn.hidden, .expandEducationBtn.hidden{
+  display: none;
+}
+
+.inputgroupExp{
+  color: black;
+  display: flex;
+  flex-direction: column;
+  height: 9vh;
+  background-color: transparent;
+  width: 100%;
+}
+
+.pics{
+  height: 1.2rem;
+  margin-right: 5px;
+}
+
+.contentRight{
+  height: 95vh;
+  width: 43vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+  margin-top: 3vh;
+}
+.nameAndDetailsDiv.darkColor{
+ height: 13vh;
+ width: 43vw;
+ padding-top: 2vh;
+ color: black;
+}
+.nameAndDetailsDiv.lightColor{
+   height: 13vh;
+ width: 43vw;
+ padding-top: 2vh;
+ color: white;
+}
+
+.fullNameHeader{
+  font-size: 40px;
+  font-weight: 500;
+
+}
+.emailNumberAdressDiv{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.email, .phoneNumber, .adress{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.adress{
+  margin-left: 25px;
+}
+.email{
+  margin-right: 25px;
+}
+
+.experienceDetailsDiv{
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+.titleDiv.darkColor{
+  width: 90%;
+  height: 5vh;
+  background-color: rgb(226, 226, 226);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleDiv.lightColor{
+  width: 90%;
+  height: 5vh;
+  color: white;
+  background-color: rgb(226, 226, 226);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experienceDetails{
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+  width: 90%;
+}
+.experienceLeft{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 35%;
+}
+.experienceRight{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 65%;
+}
+
+.locationJob, .positionTitle, .jobDescription{
+ margin-top: 1px;
+ text-align: left;
+
+}
+.startDateJob, .companyNameP, .positionTitle{
+  margin-bottom: 5px;
+}
+.companyNameP{
+  font-weight: bold;
+}
+
+@media (max-width: 1800px) and (min-width: 1000px){
+  .hexColorPicker{
+    margin-top: 9vh;
+  }
+  .colorPickerDiv.visible{
+    height: 15vh;
+  }
+  .fontPickerDiv.visible{
+    height: 24vh;
+  }
+  .font1{
+    height: 9vh;
+    width: 10vh;
+  }
+ .personalDetailsDiv{
+  height: 40vh;
+  min-height: 320px;
+ }
+ .nameAndDetailsDiv.darkColor{
+  height: 16vh;
+  color: black;
+ }
+ .nameAndDetailsDiv.lightColor{
+  height: 16vh;
+  color: white;
+ }
+ .contentControls{
+  min-height: 55px;
+ }
+ .contentLeft{
+  min-height: 150px;
+  min-width: 125px;
+ }
+
+ .experienceDiv, .educationDetailsDiv{
+  min-height: 400px;
+ }
+ .educationDiv{
+  min-height: 330px;
+ }
+ .CVAppDiv.expandedExp{
+  height: 145vh;
+}
+.CVAppDiv.expandedEdc{
+  height: 145vh;
+}
+.CVAppDiv.expandedEdcAndExp{
+  height: 200vh;
+}
+
+.email, .phoneNumber, .adress{
+  font-size: 0.9rem;
+}
+
+.titleDiv{
+  height: 5vh;
+}
+}
